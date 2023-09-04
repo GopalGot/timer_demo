@@ -14,7 +14,6 @@ class HomeView extends StatelessWidget {
         centerTitle: true,
       ),
       body:  GetBuilder<HomeViewController>(
-          init: HomeViewController(),
           builder: (controller) {
             return Padding(
               padding: const EdgeInsets.all(10.0),

@@ -9,11 +9,6 @@ import 'widget/dialog_view.dart';
 class HomeViewController extends GetxController{
   List<TimerModel> timers = [];
   Timer? countdown;
-  @override
-  void onInit() {
-    initialMethod();
-    super.onInit();
-  }
   initialMethod(){
     countdown =  Timer.periodic(const Duration(seconds: 1), (timer) {
       int timerLength = timers.where((element) => element.isContinue).toList().length;
